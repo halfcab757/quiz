@@ -1,62 +1,82 @@
 const QUESTIONS = [
     {
       question:
-        'Wie viele Menschen sind laut den Vereinten Nationen auf humanitäre Hilfe angewiesen?',
+        'How much surface of planet Earth is not earth - but water?',
       options: [
         {
-          content: '274 Millionen',
+          content: '30%',
+          isCorrect: false,
+        },
+        {
+          content: '50%',
+          isCorrect: false,
+        },
+        {
+          content: '70%',
           isCorrect: true,
-        },
-        {
-          content: '70 Millionen',
-          isCorrect: false,
-        },
-        {
-          content: '8 Millionen',
-          isCorrect: false,
         },
       ],
       details:
-        'Die Vereinten Nationen gehen davon aus, dass 2022 rund 274 Millionen Menschen auf humanitäre Hilfe angewiesen sind. Das sind 40 Millionen mehr als noch 2021.',
+        'Around 70% of the surface of the earth is covered by oceans. And even 50% of the earth\'s surface is covered by water with a minimum depth of 800 meters, defined as "deep sea".',
     },
     {
-      question: 'Wie vielen Menschen fehlt der Zugang zu sauberem Wasser?',
+      question: 'How deep is the deepest point of the oceans?',
       options: [
         {
-          content: '1,2 Milliarden',
-          isCorrect: false,
-        },
-        {
-          content: '2,2 Milliarden',
+          content: '11.000 meters',
           isCorrect: true,
         },
         {
-          content: '28 Millionen',
+          content: '15.000 meters',
+          isCorrect: false,
+        },
+        {
+          content: '18.000 meters',
           isCorrect: false,
         },
       ],
       details:
-        '2,2 Milliarden Menschen fehlt der Zugang zu Trinkwasser. Die Vereinten Nationen schätzen, dass jährlich rund 840.000 Todesfälle durch sauberes Wasser, gute Hygiene und sanitäre Anlagen vermieden werden könnten.',
+        'The deepest point of the ocean has a depth of around 11.000 meters. A good place if you wanted to hide Mount Everest (8.849 meters). By the way, fish are living at this depth.',
     },
     {
-      question: 'Wie vielen Menschen fehlt der Zugang zu sauberem Wasser?',
+      question:
+        'Which ocean is the biggest regarding it\'s surface?',
       options: [
         {
-          content: '1,2 Milliarden',
+          content: 'Indian Ocean',
           isCorrect: false,
         },
         {
-          content: '2,2 Milliarden',
+          content: 'Pacific Ocean',
           isCorrect: true,
         },
         {
-          content: '28 Millionen',
+          content: 'Atlantic Ocean',
           isCorrect: false,
         },
       ],
       details:
-        '2,2 Milliarden Menschen fehlt der Zugang zu Trinkwasser. Die Vereinten Nationen schätzen, dass jährlich rund 840.000 Todesfälle durch sauberes Wasser, gute Hygiene und sanitäre Anlagen vermieden werden könnten.',
+        'The Pacific Ocean has a surface of unbelieveable 180 million square meters. And the Atlanic Ocean is on second place, still covering a fith of the world\s entire surface.',
     },
+    {
+      question: 'How many different species of animals and plants live in the ocean?',
+      options: [
+        {
+          content: '1 million',
+          isCorrect: true,
+        },
+        {
+          content: '1.5 million',
+          isCorrect: false,
+        },
+        {
+          content: '2 million',
+          isCorrect: false,
+        },
+      ],
+      details:
+        'Nobody knows the exact number but scientists estimate that around one million different species of animals and plants live in the ocean. So far, we only know 1/3 of these species.',
+    }
   ];
 
   export default QUESTIONS;

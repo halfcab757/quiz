@@ -11,7 +11,7 @@ class Feedback extends Component {
   
     configure() {
       if (Data.questionIndex >= QUESTIONS.length - 1) {
-        this.el.querySelector('button').textContent = 'Zur Auswertung';
+        this.el.querySelector('button').textContent = 'Check evaluation';
         this.el
           .querySelector('button')
           .addEventListener('click', QuizLogic.showResults.bind(QuizLogic));
@@ -34,10 +34,10 @@ class Feedback extends Component {
   
     renderFeedback(isCorrectAnswer) {
       this.el.querySelector('h3').textContent =
-        'Ihre Antwort: ' + Data.selectedOption.textContent;
+        'Your answer: ' + Data.selectedOption.textContent;
       this.el.querySelector('h3:last-of-type').textContent = isCorrectAnswer
-        ? 'Sehr gut! Das ist richtig.'
-        : 'Das ist leider falsch.';
+        ? 'Well done!'
+        : 'Wrong : (';
       this.el.querySelector('p').textContent =
         QUESTIONS[Data.questionIndex].details;
     }

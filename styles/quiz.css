@@ -8,7 +8,6 @@
   padding: 0;
   margin: 0 auto;
   width: 100vw;
-  max-width: 900px;
   overflow-x: hidden;
   overflow-y: auto;
   font-family: 'Maven Pro', sans-serif;
@@ -18,9 +17,11 @@
   margin: 0 auto;
   padding: 0;
   width: 100vw;
-  max-width: 900px;
   overflow-x: hidden;
   color: #060606;
+  background: url('https://oceanfdn.org/wp-content/uploads/2021/11/AdobeStock_95966290-700x500.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #quiz__body h2 {
@@ -48,12 +49,13 @@
   position: relative;
   width: 90%;
   max-width: 460px;
-  margin: 0 auto;
+  margin: 32px auto 0px auto;
   height: 184px;
-  padding: 0 6px 30px 0;
+  padding: 0 0px 30px 0;
   transition: height 0.3s ease-out;
   border-top: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
+  /* background: rgba(270, 270, 270, 0.6); */
 }
 
 #app.started {
@@ -67,6 +69,8 @@
 }
 
 #myProgress {
+  background: rgba(270, 270, 270, 0.8);
+  /* border: 2px solid rgb(270, 270, 270); */
   width: 75%;
   max-width: 300px;
   height: 32px;
@@ -76,6 +80,7 @@
   border-radius: 100px;
   animation: appear 0.8s;
   box-shadow: 0px 0px 0px 2px rgb(35, 137, 202) inset;
+  /* box-shadow: 0px 0px 0px 2px rgb(270, 270, 270) inset; */
 }
 
 #myBar {
@@ -111,7 +116,9 @@
 }
 
 #card {
-  border: 2px solid rgb(35, 137, 202);
+  background: rgba(270, 270, 270, 0.8);
+  /* border: 2px solid rgb(35, 137, 202); */
+  border: 2px solid rgb(270, 270, 270);
   padding: 24px 12px;
   margin-bottom: 12px;
   width: 80%;
@@ -160,6 +167,10 @@
   margin: 12px auto;
 }
 
+#feedback p:last-of-type {
+  font-size: 75%;
+}
+
 #button-container {
   display: flex;
   justify-content: center;
@@ -199,7 +210,8 @@
   outline: none;
   border-radius: 100px;
   border: none;
-  background: transparent;
+  /* background: transparent; */
+  background: rgba(270, 270, 270, 0.8);
   border: 2px solid rgb(35, 137, 202);
   color: #060606;
 }
@@ -216,11 +228,11 @@
 }
 
 .slideToRight {
-  animation: slideToRight 0.5s forwards;
+  animation: slideToRight 0.7s forwards;
 }
 
 .slideFromLeft {
-  animation: slideFromLeft 0.5s forwards;
+  animation: slideFromLeft 0.7s forwards;
 }
 
 @keyframes turnToBackside {
@@ -237,7 +249,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(200%);
+    transform: translateX(1000px);
   }
 }
 

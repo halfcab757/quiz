@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Testen Sie Ihr Wissen im Quiz</title>
+    <title>Ocean Quiz</title>
     <link rel="stylesheet" href="styles/quiz.css">
     <script src="quiz.js" defer type="module"></script>
   </head>
   <body id="quiz__body">
-    <noscript><p style="text-align: center;">Bitte aktivieren Sie JavaScript in ihrem Browser, um das Quiz spielen zu können.</p></noscript>
+    <noscript><p style="text-align: center;">Please enable JavaScript to play this quiz.</p></noscript>
     <template id="start-template">
       <div id="start">
-        <button>Testen Sie Ihr Wissen im Quiz</button>
+        <button>Test your knowledge about the ocean</button>
       </div>
     </template>
     <template id="progress-bar-template">
@@ -49,18 +49,19 @@
         <h3></h3>
         <h3></h3>
         <p></p>
+        <p>Sources: Geomar.de / wdr.de / planet-schule.de</p>
         <div id="button-container">
-          <button>Nächste Frage</button>
+          <button>Next question</button>
         </div>
       </div>
     </template>
     <template id="result-template">
       <div id="result">
-        <h2>Gute Nachrichten! Sie können noch viel Neues lernen.</h2>
+        <h2>Good news: There is a lot to learn.</h2>
         <p></p>
-        <h2 >Danke fürs Mitspielen!</h2>
+        <h2>Thank you for playing!</h2>
         <div id="button-container">
-          <button>Quiz wiederholen</button>
+          <button>Repeat quiz</button>
         </div>
       </div>
     </template>

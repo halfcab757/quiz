@@ -15,7 +15,7 @@ class Result extends Component {
         .addEventListener('click', QuizLogic.restart);
       this.el.querySelector(
         'p'
-      ).textContent = `Sie haben ${Data.numberOfCorrectAnswers} von ${QUESTIONS.length} Fragen richtig beantwortet.`;
+      ).textContent = `You answered ${Data.numberOfCorrectAnswers} of ${QUESTIONS.length} questions correctly.`;
     }
   }
 
