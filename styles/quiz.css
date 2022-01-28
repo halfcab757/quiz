@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+#quiz__html {
+  padding: 0;
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 900px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+#quiz__body {
+  margin: 0 auto;
+  padding: 0;
+  width: 100vw;
+  max-width: 900px;
+  overflow-x: hidden;
+  color: #060606;
+}
+
+#quiz__body h2 {
+  font-size: 22px;
+  text-align: left;
+  width: 100%;
+  margin: 0 0 24px 0;
+  padding: 0;
+}
+
+#quiz__body p {
+  margin: 0px 0px 16px 0px;
+  /* necessary or can that be set globally? */
+  font-size: 18px;
+  text-align: left;
+}
+
+#quiz__body h3 {
+  margin: 0px 0px 16px 0px;
+  font-size: 18px;
+  text-align: left;
+}
+
+#app {
+  position: relative;
+  width: 90%;
+  max-width: 460px;
+  margin: 0 auto;
+  height: 184px;
+  padding: 0 6px 30px 0;
+  transition: height 0.3s ease-out;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+
+#app.started {
+  height: 650px;
+}
+
+@media (min-width: 480px) {
+  #app.started {
+    height: 500px;
+  }
+}
+
+#myProgress {
+  width: 75%;
+  max-width: 300px;
+  height: 32px;
+  margin: 0 auto 18px auto;
+  padding: 0;
+  text-align: center;
+  border-radius: 100px;
+  animation: appear 0.8s;
+  box-shadow: 0px 0px 0px 2px rgb(35, 137, 202) inset;
+}
+
+#myBar {
+  box-sizing: content-box;
+  width: 0;
+  height: 32px;
+  background: rgb(35, 137, 202);
+  border-radius: 100px;
+  transition: width 0.6s ease-out;
+  position: relative;
+  left: -1px;
+}
+
+#counter {
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 38px;
+  z-index: 1;
+  animation: appear 0.8s forwards;
+}
+
+#counter h3 {
+  margin: 12px 0;
+  color: rgb(59, 59, 59);
+  font-size: 18px;
+  text-align: center;
+}
+
+#start {
+  text-align: center;
+}
+
+#card {
+  border: 2px solid rgb(35, 137, 202);
+  padding: 24px 12px;
+  margin-bottom: 12px;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  height: 500px;
+  transform: rotateY(0);
+  border-radius: 24px;
+}
+
+@media (min-width: 480px) {
+  #card {
+    height: 350px;
+  }
+}
+
+#options {
+  list-style: none;
+  padding: 0;
+}
+
+#options li button {
+  display: block;
+  margin: 18px auto;
+  padding: 6px;
+  font-family: inherit;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 100px;
+  border: 2px solid rgb(35, 137, 202);
+  width: 90%;
+  background: transparent;
+}
+
+@media (hover: hover) {
+  #options li button:hover {
+    color: white;
+    background: rgb(35, 137, 202);
+    cursor: pointer;
+  }
+}
+
+#feedback {
+  width: 100%;
+  margin: 12px auto;
+}
+
+#button-container {
+  display: flex;
+  justify-content: center;
+}
+
+#feedback button,
+#result button {
+  margin: 24px 0;
+  padding: 12px;
+  font-family: inherit;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 100px;
+  border: 2px solid rgb(35, 137, 202);
+  background: transparent;
+  position: absolute;
+  bottom: 0px;
+}
+
+#feedback button:hover,
+#result button:hover {
+  background: rgb(35, 137, 202);
+  color: white;
+  outline: none;
+}
+
+#start button {
+  width: 90%;
+  max-width: 300px;
+  font-size: 22px;
+  padding: 24px 32px;
+  margin: 24px 0;
+  font-family: inherit;
+  text-align: center;
+  font-weight: bold;
+  outline: none;
+  border-radius: 100px;
+  border: none;
+  background: transparent;
+  border: 2px solid rgb(35, 137, 202);
+  color: #060606;
+}
+
+#start button:hover {
+  background: rgb(35, 137, 202);
+  color: white;
+}
+
+/* Animations follow */
+
+.turnToBackside {
+  animation: turnToBackside 0.7s forwards;
+}
+
+.slideToRight {
+  animation: slideToRight 0.5s forwards;
+}
+
+.slideFromLeft {
+  animation: slideFromLeft 0.5s forwards;
+}
+
+@keyframes turnToBackside {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes slideToRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
