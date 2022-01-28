@@ -8,6 +8,7 @@
   padding: 0;
   margin: 0 auto;
   width: 100vw;
+  height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
   font-family: 'Maven Pro', sans-serif;
@@ -17,8 +18,10 @@
   margin: 0 auto;
   padding: 0;
   width: 100vw;
+  height: 100vh;
   overflow-x: hidden;
   color: #060606;
+  background: #00007F;
   background: url('https://oceanfdn.org/wp-content/uploads/2021/11/AdobeStock_95966290-700x500.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,7 +73,6 @@
 
 #myProgress {
   background: rgba(270, 270, 270, 0.8);
-  /* border: 2px solid rgb(270, 270, 270); */
   width: 75%;
   max-width: 300px;
   height: 32px;
