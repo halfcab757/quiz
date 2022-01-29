@@ -10,6 +10,11 @@ class Result extends Component {
     }
   
     configure() {
+
+      if (Data.numberOfCorrectAnswers < 3) {
+        this.el.querySelector('h2').textContent = 'Good news: There still is a lot to discover for you.';
+      }
+
       this.el
         .querySelector('button')
         .addEventListener('click', QuizLogic.restart);

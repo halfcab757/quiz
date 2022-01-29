@@ -17,7 +17,7 @@ const QUESTIONS = [
         },
       ],
       details:
-        'Around 70% of the surface of the earth is covered by oceans. And even 50% of the earth\'s surface is covered by water with a minimum depth of 800 meters, defined as "deep sea".',
+        'Around 70% of the surface of the earth is covered by oceans. And even 50% of the earth\'s surface is covered by water deeper than 800 meters, defined as "deep sea".',
     },
     {
       question: 'How deep is the deepest point of the oceans?',

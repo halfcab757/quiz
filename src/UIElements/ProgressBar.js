@@ -13,7 +13,7 @@ class ProgressBar extends Component {
       const currentPercent = index * Data.percentPerQuestion;
       this.bar.style.width = currentPercent + '%';
       this.counterEl.textContent = currentPercent + '%';
-      this.counterEl.style.color = currentPercent > 58 ? 'white' : 'black';
+      this.counterEl.style.color = currentPercent > 45 ? 'black' : 'white';
     }
   }
 
